@@ -30,6 +30,15 @@ section{
     color: var(--light-color);
 }
 
+.aboutInfo .titlerec{
+    border:solid var(--dark-color);
+    color: var(--dark-color);
+}
+
+.aboutInfo p{
+    /* line-height: 20px; */
+}
+
 .expertContainer{
     display: flex;
     flex-direction: column;
