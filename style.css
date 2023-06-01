@@ -499,6 +499,12 @@ swiper-slide {
     url(/Images/Graduation/sanusi-20.JPG) center/cover no-repeat fixed;
 }
 
+/* GRADUATION PAGE */
+.contactGallery {
+  background: linear-gradient(90deg, #ff800080, #332e2956),
+    url(/Images/contactimg.png) center/cover no-repeat fixed;
+}
+
 .galleryContainer > div {
   margin-top: 7rem;
 }
