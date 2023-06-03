@@ -1,0 +1,92 @@
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #332e29;
+  z-index: 100;
+  height: 5rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo img {
+  width: 110px;
+}
+
+nav .navMenu ul li {
+  position: relative;
+  float: left;
+}
+
+nav .navMenu ul li a {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+nav .navMenu ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #332e28;
+  display: none;
+}
+
+nav .navMenu ul li ul li {
+  width: 100%;
+  padding: 10px;
+}
+
+nav .navMenu ul li ul li:hover{
+    background: #976930ce;
+    transition: var(--transition);
+}
+
+nav .navMenu ul li:hover > ul {
+  display: initial;
+}
+
+button {
+  display: none;
+}
+@media (max-width: 991px) {
+  nav {
+    padding: 20px;
+  }
+
+  button {
+  }
+
+  #close-menu-button {
+    display: none;
+  }
+
+  nav .navMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
+  }
+
+  nav .navMenu ul li {
+    width: 100%;
+  }
+
+  /* SUBNAV */
+  nav .navMenu ul li ul {
+    position: relative;
+    width: 100%;
+  }
+}
